@@ -1,10 +1,10 @@
 /**
  * AI Assistant — Chat Widget Logic
- * Powered by Groq API (llama-3.3-70b-versatile)
+ * Powered by Groq API via Secure Netlify Function
  * Session memory: full conversation history sent on every request.
  */
 
-const GROQ_API_KEY = ""; // ← Your Groq API key (do not push real keys to GitHub)
+const USE_API = true; // Set to true to use the backend function, false for mock mode
 
 class AIAssistant {
   constructor() {
@@ -84,7 +84,7 @@ class AIAssistant {
       suggestions.style.opacity = "0.4";
     }
 
-    if (GROQ_API_KEY) {
+    if (USE_API) {
       this.getGroqResponse(text);
     } else {
       this.getMockResponse(text);
@@ -226,18 +226,14 @@ Guidelines:
 
     try {
       const response = await fetch(
-        "https://api.groq.com/openai/v1/chat/completions",
+        "/.netlify/functions/chat",
         {
           method: "POST",
           headers: {
-            "Content-Type": "application/json",
-            "Authorization": `Bearer ${GROQ_API_KEY}`
+            "Content-Type": "application/json"
           },
           body: JSON.stringify({
-            model: "qwen/qwen3.8-27b",
-            messages,
-            temperature: 0.7,
-            max_tokens: 512
+            messages
           })
         }
       );
