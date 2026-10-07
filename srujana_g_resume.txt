@@ -1,0 +1,110 @@
+SRUJANA G
+
+AI Engineer | GenAI | LLM | RAG | AI Agents | Python
+
++91 9141363498 | srujana.ganesh21@gmail.com | LinkedIn | GitHub
+
+Professional Summary
+AI Engineer with production experience building and deploying GenAI applications, LLM-powered services, RAG pipelines, and
+agentic AI workflows at Zynthora.ai. Hands-on experience developing LLM-integrated microservices, hybrid retrieval systems,
+vector and knowledge-graph architectures, and production inference pipelines using Python, FastAPI, vLLM, Redis, Docker, and
+GPU infrastructure. Built multi-agent RAG systems using ReAct, HyDE, and Corrective RAG, and worked with vector databases
+including Qdrant and pgvector. Experienced in taking AI systems from experimentation through deployment, optimization,
+validation, and production readiness.
+
+Professional Experience
+Associate AI Engineer - Zynthora.ai
+
+Sept 2025 – Present
+
+• Develop and productionize AI/GenAI solutions across Healthcare, Telecom, BFSI, and Defence use cases, contributing across
+
+model development, AI service integration, deployment, optimization, and production readiness.
+
+OneVoice - Real-Time Meeting Translation Platform (ASR, MT, TTS, Meeting Minutes, RAG Side Panel)
+
+• Developed production AI services integrating ASR, machine translation, TTS, meeting summarization, and RAG-based
+
+contextual assistance into a real-time meeting platform.
+
+• Built a streaming chunking service that combines fragmented ASR output using word/sentence boundaries and a rolling Redis
+
+context buffer before passing coherent text to downstream translation services.
+
+• Integrated M2M-100 with NVIDIA Triton Inference Server over gRPC, implementing KV-cache decoding and dynamic batching
+
+for efficient GPU inference.
+
+ReSolveRCM - AI-Driven Healthcare Claims Denial Management
+
+• Built and deployed an isolated LLM-powered AI microservice using vLLM and Mistral-7B-Instruct, exposing a structured JSON
+
+API for automated denial root-cause analysis across 10 categories and 8 recommended actions.
+
+• Developed a hybrid RAG pipeline combining retrieval and cross-encoder reranking, achieving (85%+ Recall@5, 88%+
+
+accuracy).
+
+• Designed the RAG retrieval layer using vector search and cross-encoder reranking to retrieve relevant denial knowledge before
+
+LLM-based root-cause classification and recommended-action generation.
+
+Unified Speech-to-Speech (S2S)
+
+• Implemented the speech encoding pipeline using mHuBERT, extracting 768-dimensional contextual speech representations from
+
+input audio for downstream discrete speech-unit modeling.
+
+• Developed the continuous-to-discrete speech representation stage using MiniBatchKMeans, training a 1,000-cluster codebook to
+
+quantize mHuBERT embeddings into discrete speech units.
+
+• Validated the encoder and quantization pipeline on the English–Hindi S2S system, ensuring consistent discrete-unit
+
+representations for downstream speech translation components.
+
+PRISM - Social Sentiment Intelligence Platform
+
+• Designed a multi-stage NLP pipeline combining preprocessing, heuristic filtering, LLM-based sentiment classification,
+
+crisis-severity detection, and impact scoring for high-volume social content.
+
+• Implemented credibility, bot, and promotional-content scoring to reduce noisy or low-value social signals before downstream
+
+sentiment and crisis analysis.
+
+• Built LLM-driven classification workflows for sentiment and crisis severity, converting unstructured social-media content into
+
+structured intelligence for downstream analytics.
+
+AI Engineer Intern - AIRAT Systems, NIT Karnataka
+
+Jan 2025 – May 2025
+
+• Designed to support surgical training by offering performance scores, suggestions, and visual feedback to help surgeons refine
+
+their skills.
+
+• The system processes laparoscopic surgery videos to detect and track instrument movements using computer vision. A
+
+reinforcement learning model evaluates tool paths and provides real-time feedback for improving precision and reducing errors.
+
+Personal Projects
+CogniGraph - Agentic Hybrid GraphRAG Platform
+• Built an agentic RAG system combining a Neo4j knowledge graph, vector index, and a multi-agent ReAct loop (Planner,
+
+Graph, Vector, Critic, Synthesis) with HyDE retrieval and Corrective RAG (CRAG) quality gating, backed by semantic
+chunking and LLM-driven entity extraction across 7 Dockerized services.
+
+Education
+Sahyadri College of Engineering and Management
+B.E., Artificial Intelligence and Machine Learning | CGPA: 8.83 / 10
+
+2021 – 2025
+
+Technical Skills
+Languages, Frameworks & Speech AI: Python, FastAPI, Pydantic, PyTorch, LangChain, Whisper ASR, M2M-100, Chatterbox TTS, VAD
+LLMs & Generative AI: Gemini, Claude, Groq/Llama-3, vLLM, Mistral-7B, LoRA, RAG, HyDE, CRAG, ReAct, Reinforcement Learning, OpenCV
+Data, Vector/Graph DBs & DevOps: Qdrant, pgvector, Neo4j, Redis, MongoDB, PostgreSQL, Docker, CUDA/GPU, Celery, Git
+
+
